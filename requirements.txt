@@ -5,9 +5,11 @@ Pillow==10.0.0
 scipy==1.11.1
 scikit-image==0.20.0
 streamlit==1.22.0
-torch==2.0.1 --index-url https://download.pytorch.org/whl/cpu
-torchvision==0.15.2 --index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.0.1
+torchvision==0.15.2
 mmengine==0.8.2
-mmcv==2.0.0 -f https://download.openmmlab.com/mmcv/dist/cpu/torch2.0/index.html
+--extra-index-url https://download.openmmlab.com/mmcv/dist/cpu/torch2.0/index.html
+mmcv==2.0.0
 mmdet==3.1.0
 mmocr==1.0.1
