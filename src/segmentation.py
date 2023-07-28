@@ -1,4 +1,5 @@
 from collections import Counter
+import os
 
 import numpy as np
 from scipy import ndimage as ndi
@@ -76,10 +77,13 @@ def get_menu(probe_image: Image) -> Image:
 
 
 def split_menu(menu_image: Image, mode: str) -> list[Image]:
+    # read in the template images
+    current_dir = os.path.dirname(os.path.abspath(__file__))
     if mode == 'Boss Specific':
-        template_filepath = 'menu_references/boss_mode_row.png'
+        template_filepath = 'assets/boss_mode_row.png'
     else:
-        template_filepath = 'menu_references/overall_mode_row.png'
+        template_filepath = 'assets/overall_mode_row.png'
+    template_filepath = os.path.join(current_dir, '..', template_filepath)
     template = Image.open(template_filepath)
 
     # resize the template to match the cropped image's width and keep the aspect ratio
