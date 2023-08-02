@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["SiftingSands <user@server.fake>"]
 readme = "README.md"
-packages = [{include = "poetry_demo"}]
 
 [tool.poetry.dependencies]
 python = ">=3.10, <3.12"
