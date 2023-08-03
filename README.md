@@ -52,11 +52,20 @@ OR
 # Usage
 
 1. Upload a screenshot of the "Union Log" on the right side of the dashboard
-2. Select the mode (Overall or Boss Specific)
-3. Click the "Display Intermediate Images" checkbox if you want to see the intermediate images used in the extraction process
-4. Click the "Run" button
-5. The results will be displayed in the dashboard. The free tier of streamlit cloud is CPU only, so results for a single image may take up to 1 minute to be computed.
-6. Upload another image and repeat if desired
+   
+    "Overall" :
+   
+   ![image](https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/e42f6671-1bd5-4d7f-b111-c80fa18384a8)
+
+   "Boss Specific":
+   
+   ![image(1)](https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/7c8f2f60-f48b-4b6b-ba03-55497579b919)
+
+3. Select the mode (Overall or Boss Specific)
+4. Click the "Display Intermediate Images" checkbox if you want to see the intermediate images used in the extraction process
+5. Click the "Run" button
+6. The results will be displayed in the dashboard. The free tier of streamlit cloud is CPU only, so results for a single image may take up to 1 minute to be computed.
+7. Upload another image and repeat if desired
 
 # Misc
 - `utils/visualize_raid_results.py` can be ran to create Plotly graphs of the overall union raid results. Result samples from season 7 are included in `assets/*.csv`
