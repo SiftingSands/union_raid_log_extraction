@@ -144,7 +144,7 @@ def mode_1(image):
 
 if __name__ == "__main__":
     # Title
-    st.title("Image Processing App")
+    st.title("Union Raid Log Extraction")
 
     # Sidebar to load an image
     st.sidebar.title("Load Image")
