@@ -25,12 +25,12 @@ https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/0b9cc3
 
 # Limitations
 
-0. Does NOT work on screenshots of the "Union Log" after the union raid ends. They are a white background that messes up the image processing pipeline that was designed for the dark background.
-1. OCD may detect two closely spaced numbers for a commander's damage. OCR returns incorrect
-2. The number of portraits detected in the "Boss Specific" mode expects 6; 1 for the boss and 5 for the team composition. If the number of portraits detected is not 6, no team composition will be returned in the table. This is an observed occaisonal failure.
-2. The matching algorithm is a simple template matching algorithm that uses the "assets/nikke_images.pkl" file to find the best match for each unit in the screenshot ("Boss Specific" mode). *However, matching accuracy is not great and the user may have to manually correct the results.* For example, Mary is often matched with the wrong unit. I suspect this is because additional information such as unit level and core level is overlaid on the in-game portraits.
+1. Does NOT work on screenshots of the "Union Log" after the union raid ends. They are a white background that messes up the image processing pipeline that was designed for the dark background.
+2. OCD may detect two closely spaced numbers for a commander's damage. OCR occaisonally has failures in this case with duplicate numbers, so the reported damage is too high by 1 digit.
+3. The number of portraits detected in the "Boss Specific" mode expects 6; 1 for the boss and 5 for the team composition. If the number of portraits detected is not 6, no team composition will be returned in the table. This is an observed occaisonal failure.
+4. The matching algorithm is a simple template matching algorithm that uses the "assets/nikke_images.pkl" file to find the best match for each unit in the screenshot ("Boss Specific" mode). *However, matching accuracy is not great and the user may have to manually correct the results.* For example, Mary is often matched with the wrong unit. I suspect this is because additional information such as unit level and core level is overlaid on the in-game portraits.
     - I tried using feature embeddings from small CNNs such as VGG-16 and ResNet-18, but they performed worse than the template matching algorithm.
-    
+
 # Installation and Startup
 
 ## Run with Streamlit Cloud
