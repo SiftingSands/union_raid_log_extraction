@@ -4,12 +4,11 @@ The user supplies an in-game screenshot of the "Union Log" for the overall raid 
 
 "Overall" Mode:
 
-https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/a8cd14ed-a0c0-43b4-8d29-50720397553b
+https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/af790b2b-1712-4a85-8c5f-e9eca94a3e7d
 
 "Boss Specific" Mode:
 
-https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/0b9cc380-e879-49c4-b978-af141437ffa3
-
+https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/d10a5bc1-1e4b-4cf9-b1eb-2251213cef95
 
 # Background
 - The relevant parts of the image containing a "hit" on the boss are extracted using "classical" image processing techniques such as Sobel edge detection, watershed segmentation, and template matching with the two `*.png` files in the  `assets` folder.
@@ -55,11 +54,12 @@ OR
    
     "Overall" :
    
-   ![image](https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/e42f6671-1bd5-4d7f-b111-c80fa18384a8)
+   ![image](https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/80bff614-5d7c-4af6-8d14-dd4b9f9df78f)
 
    "Boss Specific":
    
-   ![image(1)](https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/7c8f2f60-f48b-4b6b-ba03-55497579b919)
+   ![image(1)](https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/c9db15d6-e275-4c7e-a385-637e67cde6d2)
+
 
 3. Select the mode you want to run
     - See `assets/overall_example.png` and `assets/boss_specific_example.png` for sample inputs for each mode
