@@ -51,12 +51,14 @@ OR
 # Usage
 
 1. Upload a screenshot of the "Union Log" on the right side of the dashboard
+
+    Take in-game screenshots from these locations:
    
-    "Overall" :
+    "Overall"
    
    ![image](https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/80bff614-5d7c-4af6-8d14-dd4b9f9df78f)
 
-   "Boss Specific":
+   "Boss Specific"
    
    ![image(1)](https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/c9db15d6-e275-4c7e-a385-637e67cde6d2)
 
