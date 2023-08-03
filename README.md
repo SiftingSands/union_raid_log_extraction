@@ -1,5 +1,15 @@
+
 # Description
 The user supplies an in-game screenshot of the "Union Log" for the overall raid or on a per-boss basis, then the application extracts information such as damage dealt, commander name, and boss name.
+
+"Overall" Mode:
+
+https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/a8cd14ed-a0c0-43b4-8d29-50720397553b
+
+"Boss Specific" Mode:
+
+https://github.com/SiftingSands/union_raid_log_extraction/assets/43226539/0b9cc380-e879-49c4-b978-af141437ffa3
+
 
 # Background
 - The relevant parts of the image containing a "hit" on the boss are extracted using "classical" image processing techniques such as Sobel edge detection, watershed segmentation, and template matching with the two `*.png` files in the  `assets` folder.
